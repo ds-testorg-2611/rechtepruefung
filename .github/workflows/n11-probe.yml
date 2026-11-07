@@ -1,0 +1,11 @@
+name: n11-probe
+on:
+  push:
+    branches: [n11-probe]
+permissions: {}
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    environment: live
+    steps:
+      - run: echo "N11-PROBE-JOB-LIEF"
